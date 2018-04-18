@@ -6,8 +6,8 @@ from 臺灣言語工具.音標系統.閩南語.臺灣閩南語羅馬字拼音 im
 
 
 def _main(詞目總檔所在):
-    with open('su5pio2.csv', 'wt', encoding='utf-8') as 詞表:
-        csv.writer(詞表)
+    with open('su5pio2.csv', 'wt', encoding='utf-8') as 詞表檔:
+        詞表 = csv.writer(詞表檔)
         with open(詞目總檔所在, 'rt', encoding='utf-8') as 檔:
             with io.StringIO(檔.read()) as 資料:
                 for row in DictReader(資料):
@@ -21,6 +21,7 @@ def _main(詞目總檔所在):
                             .看型('-', ' ')
                         )
                     if 主編碼 < 60000:
+                        詞表.writerow([漢字, 音讀, *結果])
                         print(漢字, 音讀, *結果)
 
 

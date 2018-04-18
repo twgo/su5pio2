@@ -26,4 +26,4 @@ def _main(詞目總檔所在):
 
 
 if __name__ == '__main__':
-    _main('/Users/fafoy/git/moedict-data-twblg/uni/詞目總檔.csv')
+    _main('../moedict-data-twblg/uni/詞目總檔.csv')

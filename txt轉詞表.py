@@ -22,9 +22,9 @@ def _main(詞目總檔所在):
 
     with open('su5pio2.txt.csv', 'wt', encoding='utf-8') as 詞表檔:
         詞表 = csv.writer(詞表檔)
-        詞表.writerow(['漢字', '羅馬字', ])
+        詞表.writerow(['漢字', '羅馬字', '來源', '會用得無', ])
         for 資料 in sorted(資料集合):
-            詞表.writerow(資料)
+            詞表.writerow((資料[0], 資料[1], '', '', 資料[2]))
 
 
 if __name__ == '__main__':

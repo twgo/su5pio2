@@ -27,3 +27,6 @@ RUN python3 manage.py 匯入台文語料庫trs
 
 RUN pip3 install --upgrade https://github.com/Taiwanese-Corpus/hue7jip8/archive/itaigi.zip
 RUN python3 manage.py itaigi
+
+COPY docker轉詞表 .
+RUN python3 docker轉詞表

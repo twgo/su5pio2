@@ -32,3 +32,4 @@ COPY docker轉詞表.py .
 #COPY 轉出詞表.py .
 RUN python3 manage.py shell < docker轉詞表.py
 
+# automated-builds test

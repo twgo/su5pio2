@@ -30,4 +30,4 @@ RUN python3 manage.py itaigi
 COPY docker轉詞表.py .
 RUN python3 manage.py shell < docker轉詞表.py
 
-# automated-builds test
+CMD cat docker.csv

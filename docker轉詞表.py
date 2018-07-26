@@ -1,9 +1,9 @@
-from 臺灣言語工具.音標系統.閩南語.臺灣閩南語羅馬字拼音 import 臺灣閩南語羅馬字拼音
 def a():
     import csv
     from 臺灣言語工具.解析整理.拆文分析器 import 拆文分析器
     from 臺灣言語工具.音標系統.台語 import 新白話字
     from 臺灣言語服務.models import 訓練過渡格式
+    from 臺灣言語工具.音標系統.閩南語.臺灣閩南語羅馬字拼音 import 臺灣閩南語羅馬字拼音
 
     def _main():
         with open('docker.csv', 'wt', encoding='utf-8') as 詞表檔:

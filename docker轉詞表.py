@@ -12,12 +12,15 @@ def a():
                 詞表.writerow(資料)
 
     def _全部資料():
-        全部資料 = set()
-        for tsua in 訓練過渡格式.objects.filter(文本__isnull=False):
+        全部資料 = {}
+        for tsua in (
+            訓練過渡格式.objects.filter(文本__isnull=False).order_by('id')
+        ):
             for su in 拆文分析器.分詞句物件(tsua.文本).轉音(新白話字).網出詞物件():
                 if su.看音() != '':
-                    全部資料.add((su.看型(), su.看音(), tsua.來源))
-        return sorted(全部資料)
+                    全部資料[(su.看型(), su.看音())] = tsua.來源
+        for (han, lo), guan in 全部資料.items():
+            yield han, lo, guan
 
     _main()
 

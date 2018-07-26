@@ -1,5 +1,4 @@
-FROM i3thuan5/tai5-uan5_gian5-gi2_kang1-ku7:latest as ki1tshoo2
-MAINTAINER i3thuan5
+FROM i3thuan5/tai5-uan5_gian5-gi2_kang1-ku7:latest
 
 RUN pip3 install tai5-uan5_gian5-gi2_hok8-bu7 hue7jip8 tw01 twisas
 
@@ -12,10 +11,8 @@ RUN pip3 install --upgrade https://github.com/Taiwanese-Corpus/hue7jip8/archive/
 
 RUN python3 manage.py migrate
 
+RUN python3 manage.py 教典詞條
 RUN python3 manage.py 教典例句
-RUN python3 manage.py icorpus臺華平行新聞語料庫
-RUN python3 manage.py TGB通訊
-RUN python3 manage.py 詞彙分級
 
 COPY twisas2.json .
 COPY twisas-HL.json .
@@ -25,11 +22,12 @@ RUN pip3 install --upgrade https://github.com/twgo/twisas/archive/master.zip
 RUN python3 manage.py 匯入台文語料庫2版文本 twisas2.json
 RUN python3 manage.py 匯入台文語料庫trs
 
-RUN pip3 install --upgrade https://github.com/Taiwanese-Corpus/hue7jip8/archive/itaigi.zip
+# RUN python3 manage.py icorpus臺華平行新聞語料庫
+# RUN python3 manage.py TGB通訊
+RUN python3 manage.py 詞彙分級
 RUN python3 manage.py itaigi
 
 COPY docker轉詞表.py .
-#COPY 轉出詞表.py .
 RUN python3 manage.py shell < docker轉詞表.py
 
 # automated-builds test

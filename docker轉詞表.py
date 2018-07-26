@@ -1,3 +1,4 @@
+from 臺灣言語工具.音標系統.閩南語.臺灣閩南語羅馬字拼音 import 臺灣閩南語羅馬字拼音
 def a():
     import csv
     from 臺灣言語工具.解析整理.拆文分析器 import 拆文分析器
@@ -17,6 +18,10 @@ def a():
             訓練過渡格式.objects.filter(文本__isnull=False).order_by('id')
         ):
             for su in 拆文分析器.分詞句物件(tsua.文本).轉音(新白話字).網出詞物件():
+                if su.敢是標點符號():
+                    continue
+                if not su.音標敢著(臺灣閩南語羅馬字拼音):
+                    continue
                 ui = (su.看型(), su.看音())
                 if su.看音() != '' and ui not in 全部資料:
                     全部資料[ui] = tsua.來源

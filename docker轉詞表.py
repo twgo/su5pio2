@@ -17,8 +17,9 @@ def a():
             訓練過渡格式.objects.filter(文本__isnull=False).order_by('id')
         ):
             for su in 拆文分析器.分詞句物件(tsua.文本).轉音(新白話字).網出詞物件():
-                if su.看音() != '':
-                    全部資料[(su.看型(), su.看音())] = tsua.來源
+                ui = (su.看型(), su.看音())
+                if su.看音() != '' and ui not in 全部資料:
+                    全部資料[ui] = tsua.來源
         for (han, lo), guan in 全部資料.items():
             yield han, lo, guan
 

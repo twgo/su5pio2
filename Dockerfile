@@ -20,7 +20,7 @@ COPY twisas-HL.json .
 RUN echo 0717-1732
 RUN pip3 install --upgrade https://github.com/twgo/twisas/archive/master.zip
 RUN python3 manage.py 匯入台文語料庫2版文本 twisas2.json
-RUN python3 manage.py 匯入台文語料庫trs
+# RUN python3 manage.py 匯入台文語料庫trs
 
 # RUN python3 manage.py icorpus臺華平行新聞語料庫
 # RUN python3 manage.py TGB通訊

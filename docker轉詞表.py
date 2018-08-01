@@ -17,16 +17,17 @@ def a():
         for tsua in (
             訓練過渡格式.objects.filter(文本__isnull=False).order_by('id')
         ):
-            for su in 拆文分析器.分詞句物件(tsua.文本).轉音(新白話字).網出詞物件():
+            句物件 = 拆文分析器.分詞句物件(tsua.文本).轉音(新白話字)
+            for su in 句物件.網出詞物件():
                 if su.敢是標點符號():
                     continue
                 if not su.音標敢著(臺灣閩南語羅馬字拼音):
                     continue
                 ui = (su.看型(), su.看音())
                 if su.看音() != '' and ui not in 全部資料:
-                    全部資料[ui] = tsua.來源
-        for (han, lo), guan in 全部資料.items():
-            yield han, lo, guan
+                    全部資料[ui] = tsua.來源, 句物件.看型(), 句物件.看音()
+        for (han, lo), (guan, han, lo) in 全部資料.items():
+            yield han, lo, guan, han, lo
 
     _main()
 

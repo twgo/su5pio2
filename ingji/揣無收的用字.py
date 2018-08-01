@@ -1,3 +1,6 @@
+from 臺灣言語工具.解析整理.解析錯誤 import 解析錯誤
+
+
 def a():
     import csv
     from 臺灣言語工具.解析整理.拆文分析器 import 拆文分析器
@@ -9,10 +12,13 @@ def a():
                 if ho != 0:
                     詞表.add((資料[0], 資料[1]))
             for han, lo in 詞表:
-                for 字物件 in 拆文分析器.建立句物件(han, lo):
-                    key = 字物件.看型(), 字物件.看音()
-                    if key not in 詞表:
-                        print(key)
+                try:
+                    for 字物件 in 拆文分析器.建立句物件(han, lo).篩出字物件():
+                        key = 字物件.看型(), 字物件.看音()
+                        if key not in 詞表:
+                            print(key)
+                except 解析錯誤:
+                    pass
     _main()
 
 

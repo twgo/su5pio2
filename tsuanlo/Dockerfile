@@ -13,5 +13,5 @@ RUN python3 manage.py 白話字文獻館 --錯誤印部份就好
 RUN python3 manage.py 台灣白話基礎語句
 
 COPY lautsuanlo.py .
-RUN echo import lautsuanlo > python3 manage.py shell
+RUN echo import lautsuanlo | python3 manage.py shell
 

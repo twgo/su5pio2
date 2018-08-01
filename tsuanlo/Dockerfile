@@ -1,0 +1,15 @@
+FROM twgo/su5pio2
+
+RUN python3 manage.py 匯入台文語料庫trs
+RUN python3 manage.py icorpus臺華平行新聞語料庫
+RUN python3 manage.py TGB通訊
+RUN python3 manage.py 台語文語料庫蒐集及語料庫為本台語書面語音節詞頻統計
+RUN python3 manage.py 台語文數位典藏資料庫
+RUN python3 manage.py 教育部臺灣閩南語字詞頻調查工作
+RUN python3 manage.py 白話字文獻館
+# RUN python3 manage.py 台灣植物名彙
+RUN python3 manage.py 台灣白話基礎語句
+
+COPY lautsuanlo.py .
+RUN python3 lautsuanlo.py
+

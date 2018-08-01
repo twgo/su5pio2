@@ -47,7 +47,7 @@ def main():
                 '音節加調種類': len(tsuanpoojitiau),
                 '音節無調種類': len(tsuanpooji),
             },
-            tong, ensure_ascii=False, sort_keys=False, indet=2
+            tong, ensure_ascii=False, sort_keys=False, indent=2
         )
     with open('tsuanpooku.txt', 'w') as tong:
         print('\n'.join(tsuanpooku), file=tong)

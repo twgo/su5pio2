@@ -4,6 +4,7 @@ from 臺灣言語工具.基本物件.公用變數 import 無音
 from builtins import set
 import json
 from 臺灣言語工具.音標系統.閩南語.臺灣閩南語羅馬字拼音 import 臺灣閩南語羅馬字拼音
+from 臺灣言語工具.音標系統.台語 import 新白話字
 
 
 def tsuliau():
@@ -15,7 +16,7 @@ def tsuliau():
             if 字物件.音 != 無音:
                 字物件.型 = 字物件.音
                 字物件.音 = 無音
-        yield 句物件
+        yield 句物件.轉音(新白話字)
 
 
 def main():

@@ -31,7 +31,7 @@ def main():
         su += len(句物件.網出詞物件())
         for 字物件 in 句物件.篩出字物件():
             if 臺灣閩南語羅馬字拼音(字物件.型).音標 is not None:
-                tsuanpooji.add(字物件.看分詞())
+                tsuanpooji.add(字物件.看分詞().strip('0123456789'))
                 tsuanpoojitiau.add(字物件.看分詞())
         for 詞物件 in 句物件.網出詞物件():
             if not 詞物件.敢是標點符號():

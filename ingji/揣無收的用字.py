@@ -21,8 +21,10 @@ def a():
                             bosiu[key] = tshun
             except 解析錯誤:
                 pass
-        for bo, tshun in sorted(bosiu.items()):
-            print(bo + tshun)
+        with open('ingji.csv', 'wt', encoding='utf-8') as 檔:
+            詞表 = csv.writer(檔)
+            for bo, tshun in sorted(bosiu.items()):
+                詞表.writerow(bo + tshun)
     _main()
 
 

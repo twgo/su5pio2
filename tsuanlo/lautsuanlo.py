@@ -42,8 +42,8 @@ def main():
             {
                 '總音節數（無算標點）': imchiat,
                 '總詞數（無算標點）': su,
-                '總句數': len(tsuanpooku),
-                '詞種類（無算標點）': imchiat,
+                '資料總數（詞、句、段）': len(tsuanpooku),
+                '詞種類（無算標點）': len(tsuanpoosu),
                 '音節加調種類': len(tsuanpoojitiau),
                 '音節無調種類': len(tsuanpooji),
             },
@@ -55,6 +55,8 @@ def main():
         print('\n'.join(tsuanpoojitiau), file=tong)
     with open('tsuanpooji.txt', 'w') as tong:
         print('\n'.join(tsuanpooji), file=tong)
+    with open('tsuanpoosu.txt', 'w') as tong:
+        print('\n'.join(tsuanpoosu), file=tong)
 
 
 main()

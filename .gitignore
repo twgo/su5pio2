@@ -68,3 +68,5 @@ MANIFEST
 /.pydevproject
 /db.sqlite3
 /su5pio2.csv
+*csv
+*xls

@@ -29,13 +29,17 @@ def main():
     for 句物件 in tsuliau():
         imchiat += len(句物件.篩出字物件())
         su += len(句物件.網出詞物件())
-        for 字物件 in 句物件.篩出字物件():
-            if 臺灣閩南語羅馬字拼音(字物件.型).音標 is not None:
-                tsuanpooji.add(字物件.看分詞().strip('0123456789'))
-                tsuanpoojitiau.add(字物件.看分詞())
         for 詞物件 in 句物件.網出詞物件():
             if not 詞物件.敢是標點符號():
-                tsuanpoosu.add(詞物件.看分詞())
+                tshingkhi = True
+                for 字物件 in 詞物件.篩出字物件():
+                    if 臺灣閩南語羅馬字拼音(字物件.型).音標 is not None:
+                        tsuanpooji.add(字物件.看分詞().strip('0123456789'))
+                        tsuanpoojitiau.add(字物件.看分詞())
+                    else:
+                        tshingkhi = False
+                if tshingkhi:
+                    tsuanpoosu.add(詞物件.看分詞())
         tsuanpooku.append(句物件.看分詞())
     with open('tsonghong.json', 'w') as tong:
         json.dump(

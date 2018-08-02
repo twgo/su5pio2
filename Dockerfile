@@ -28,6 +28,6 @@ RUN python3 manage.py 詞彙分級
 RUN python3 manage.py itaigi
 
 COPY docker轉詞表.py .
-RUN python3 manage.py shell < docker轉詞表.py
+RUN echo import docker轉詞表 | python3 manage.py shell 
 
 CMD cat docker.csv

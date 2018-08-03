@@ -37,11 +37,11 @@ def su():
             tong, ensure_ascii=False, sort_keys=False, indent=2
         )
     with open('tsuanpoojitiau.txt', 'w') as tong:
-        print('\n'.join(tsuanpoojitiau), file=tong)
+        print('\n'.join(sorted(tsuanpoojitiau)), file=tong)
     with open('tsuanpooji.txt', 'w') as tong:
-        print('\n'.join(tsuanpooji), file=tong)
+        print('\n'.join(sorted(tsuanpooji)), file=tong)
     with open('tsuanpoosu.txt', 'w') as tong:
-        print('\n'.join(tsuanpoosu), file=tong)
+        print('\n'.join(sorted(tsuanpoosu)), file=tong)
 
 
 def tsuliau():

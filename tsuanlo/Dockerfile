@@ -18,3 +18,4 @@ RUN echo import lautsuanlo | python3 manage.py shell
 COPY thongke.py .
 RUN echo import thongke | python3 manage.py shell
 
+CMD cat tsonghong.json

@@ -52,7 +52,7 @@ def su():
 def tsuliau():
     with open('tsuanpooku.txt') as tong:
         for tsua in tong.read().split('\n'):
-            yield 拆文分析器.分詞句物件(tsua)
+            yield 拆文分析器.建立句物件(tsua)
 
 
 su()

@@ -2,7 +2,7 @@
 import csv
 import json
 from 臺灣言語工具.解析整理.拆文分析器 import 拆文分析器
-from 臺灣言語工具.音標系統.閩南語.臺灣閩南語羅馬字拼音 import 臺灣閩南語羅馬字拼音
+from 臺灣言語工具.音標系統.台語 import 新白話字
 from 臺灣言語工具.音標系統.閩南語.臺灣閩南語羅馬字拼音 import 臺灣閩南語羅馬字拼音通行韻母表
 
 
@@ -10,7 +10,7 @@ def _main():
     tsuanpooji = set()
     tsuanpoojitiau = set()
     for 字物件 in csvtsuliau():
-        tailo = 臺灣閩南語羅馬字拼音(字物件.型)
+        tailo = 新白話字(字物件.型)
         if (
             tailo.音標 is not None and
             tailo.韻 in 臺灣閩南語羅馬字拼音通行韻母表

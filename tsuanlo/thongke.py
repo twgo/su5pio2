@@ -2,6 +2,7 @@ from 臺灣言語工具.解析整理.拆文分析器 import 拆文分析器
 from builtins import set
 import json
 from 臺灣言語工具.音標系統.閩南語.臺灣閩南語羅馬字拼音 import 臺灣閩南語羅馬字拼音
+from 臺灣言語工具.音標系統.閩南語.臺灣閩南語羅馬字拼音 import 臺灣閩南語羅馬字拼音通行韻母表
 
 
 def su():
@@ -17,9 +18,13 @@ def su():
             if not 詞物件.敢是標點符號():
                 tshingkhi = True
                 for 字物件 in 詞物件.篩出字物件():
-                    if 臺灣閩南語羅馬字拼音(字物件.型).音標 is not None:
+                    tailo = 臺灣閩南語羅馬字拼音(字物件.型)
+                    if (
+                        tailo.音標 is not None and
+                        tailo.韻 in 臺灣閩南語羅馬字拼音通行韻母表
+                    ):
                         tsuanpooji.add(字物件.看分詞().strip('0123456789'))
-                        tsuanpoojitiau.add(字物件.看分詞())
+                        tsuanpoojitiau.add(字物件.看分詞().lstrip('01'))
                     else:
                         tshingkhi = False
                 if tshingkhi:

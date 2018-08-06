@@ -1,4 +1,5 @@
 from 臺灣言語服務.models import 訓練過渡格式
+import re
 list(訓練過渡格式.objects.values_list('來源').distinct())
 from 臺灣言語工具.解析整理.拆文分析器 import 拆文分析器
 from 臺灣言語工具.基本物件.公用變數 import 無音
@@ -20,7 +21,10 @@ def tsuliau():
             if 字物件.音 != 無音:
                 字物件.型 = 字物件.音
                 字物件.音 = 無音
-        yield 句物件.轉音(新白話字)
+        lo = 句物件.轉音(新白話字)
+        if not re.search('[a-z]', lo):
+            print(tsua.來源, tsua.文本)
+        yield lo
 
 
 def ku():

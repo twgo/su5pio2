@@ -21,7 +21,7 @@ def tsuliau():
             if 字物件.音 != 無音:
                 字物件.型 = 字物件.音
                 字物件.音 = 無音
-        lo = 句物件.轉音(新白話字)
+        lo = 句物件.轉音(新白話字).看分詞()
         if not re.search('[a-z]', lo):
             print(tsua.來源, tsua.文本)
         yield lo
@@ -30,7 +30,7 @@ def tsuliau():
 def ku():
     tsuanpooku = []
     for 句物件 in tsuliau():
-        tsuanpooku.append(句物件.看分詞())
+        tsuanpooku.append(句物件)
     with open('tsuanpooku.txt', 'w') as tong:
         print('\n'.join(tsuanpooku), file=tong)
 

@@ -11,7 +11,7 @@ def tsuliau():
         .exclude(來源__in=[
             'TGB通訊',
             'twisas-trs',
-            '台語文 語料庫蒐集及語料庫為本台語書面語音節詞頻統計-HL',
+            '台語文語料庫蒐集及語料庫為本台語書面語音節詞頻統計-HL',
         ])
         .filter(文本__isnull=False).order_by('id')
     ):

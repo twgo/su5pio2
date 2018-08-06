@@ -23,8 +23,10 @@ def tsuliau():
                 字物件.音 = 無音
         lo = 句物件.轉音(新白話字).看分詞()
         if not re.search('[a-z]', lo):
-            print(tsua.來源, tsua.文本)
-        yield lo
+            if lo:
+                print(tsua.來源, tsua.文本)
+        else:
+            yield lo
 
 
 def ku():

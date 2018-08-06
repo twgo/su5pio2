@@ -39,7 +39,7 @@ def su():
                 '音節加調種類': len(tsuanpoojitiau),
                 '音節無調種類': len(tsuanpooji),
             },
-            tong, ensure_ascii=False, sort_keys=False, indent=2
+            tong, ensure_ascii=False, sort_keys=True, indent=2
         )
     with open('tsuanpoojitiau.txt', 'w') as tong:
         print('\n'.join(sorted(tsuanpoojitiau)), file=tong)

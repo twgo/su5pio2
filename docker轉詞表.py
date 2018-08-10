@@ -26,7 +26,7 @@ def _全部資料():
                 continue
             ui = (su.看型(), su.看音())
             if su.看音() != '' and ui not in 全部資料:
-                全部資料[ui] = tsua.來源, 句物件.看型(), 句物件.看音()
+                全部資料[ui] = tsua.來源, 句物件.看型(), 句物件.看音().lstrip('1')
     for (han, lo), (guan, lehan, lelo) in 全部資料.items():
         yield han, lo, guan, lehan, lelo
 

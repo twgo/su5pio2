@@ -7,7 +7,7 @@ def main():
     lo = set(thak('tsuanlo/tsuanpooji.txt'))
     bun = sorted(set(thak('tsuanlo/tsuanpooku.txt')))
 
-    with open('imtsiat.csv', 'wt', encoding='utf-8') as 檔:
+    with open('imtsiat_2.csv', 'wt', encoding='utf-8') as 檔:
         詞表 = csv.writer(檔)
         詞表.writerow(
             ['音節', '教育部漢字辭典', '全羅', '人工判斷'] +
@@ -24,9 +24,12 @@ def main():
             tshue = re.compile('[^a-zA-z0-9]{}\d'.format(su))
             si7 = []
             if h != l:
+                tshue2 = re.compile(
+                    '.{,30}' + '[^a-zA-z0-9]{}\d'.format(su) + '.{,30}')
                 for ku in bun:
                     if tshue.search(ku):
-                        si7.append(ku)
+                        m = tshue2.search(ku)
+                        si7.append(m.group(0))
             詞表.writerow([su, h, l, ''] + si7[:10])
 
 

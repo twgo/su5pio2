@@ -24,11 +24,11 @@ def su():
                         tailo.韻 in 臺灣閩南語羅馬字拼音通行韻母表
                     ):
                         tsuanpooji.add(字物件.看分詞().strip('0123456789'))
-                        tsuanpoojitiau.add(字物件.看分詞().lstrip('01'))
+                        tsuanpoojitiau.add(字物件.看分詞())
                     else:
                         tshingkhi = False
                 if tshingkhi:
-                    tsuanpoosu.add(詞物件.看分詞())
+                    tsuanpoosu.add(詞物件.看分詞().lstrip('01'))
     with open('tsonghong.json', 'w') as tong:
         json.dump(
             {

@@ -1,10 +1,8 @@
 from 臺灣言語服務.models import 訓練過渡格式
 import re
-list(訓練過渡格式.objects.values_list('來源').distinct())
 from 臺灣言語工具.解析整理.拆文分析器 import 拆文分析器
 from 臺灣言語工具.基本物件.公用變數 import 無音
 from 臺灣言語工具.音標系統.台語 import 新白話字
-
 
 def tsuliau():
     for tsua in (

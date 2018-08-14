@@ -7,4 +7,4 @@ COPY tsuanpoosu.txt .
 COPY kuelihsu.py .
 RUN echo import kuelihsu | python3 manage.py shell
 
-CMD cat tsonghong.json
+CMD cat aisiu.txt

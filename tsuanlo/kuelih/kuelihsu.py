@@ -24,7 +24,7 @@ def main():
                     if ji.型.rstrip('0123456789') not in aisiu:
                         break
                 else:
-                    print(su, file=ai)
+                    print(su.rstrip(), file=ai)
 
 
 main()

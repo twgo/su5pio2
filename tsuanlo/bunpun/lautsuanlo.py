@@ -7,11 +7,6 @@ from 臺灣言語工具.音標系統.台語 import 新白話字
 def tsuliau():
     for tsua in (
         訓練過渡格式.objects
-        .exclude(來源__in=[
-            'TGB通訊',
-            'twisas-trs',
-            '台語文語料庫蒐集及語料庫為本台語書面語音節詞頻統計-HL',
-        ])
         .filter(文本__isnull=False).order_by('id')
     ):
         句物件 = 拆文分析器.分詞句物件(tsua.文本)

@@ -16,11 +16,10 @@ RUN python3 manage.py 教典詞條
 RUN python3 manage.py 教典例句
 
 COPY twisas2.json .
-COPY twisas-HL.json .
+COPY twisas-HL-kaldi.json .
 
-RUN echo 0717-1732
 RUN pip3 install --upgrade https://github.com/twgo/twisas/archive/master.zip
-RUN python3 manage.py 匯入台文語料庫2版文本 twisas2.json
+RUN python3 manage.py 匯入台文語料庫2版文本 train twisas2.json
 # RUN python3 manage.py 匯入台文語料庫trs文本
 
 # RUN python3 manage.py icorpus臺華平行新聞語料庫

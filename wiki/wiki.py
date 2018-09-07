@@ -2,7 +2,7 @@ from http import client
 import http
 import json
 import ssl
-from sys import stdin
+from sys import stdin, stderr
 import time
 from urllib.parse import quote
 
@@ -31,11 +31,11 @@ def _main():
                 break
         r1 = conn.getresponse()
         if r1.status != 200:
-            print(r1.status, r1.reason)
-            raise RuntimeError()
-        print(
-            json.loads(r1.read().decode('utf-8'))['臺羅']
-        )
+            print(r1.status, r1.reason, file=stderr)
+        else:
+            print(
+                json.loads(r1.read().decode('utf-8'))['臺羅']
+            )
 
 
 if __name__ == '__main__':

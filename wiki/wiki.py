@@ -27,11 +27,13 @@ def _main():
                 )
             except ConnectionResetError:
                 time.sleep(0.3)
+            except RemoteDisconnected:
+                time.sleep(10)
             else:
                 break
         r1 = conn.getresponse()
         if r1.status != 200:
-            print(r1.status, r1.reason, file=stderr)
+            print(r1.status, r1.reason, (tsua,), file=stderr)
         else:
             print(
                 json.loads(r1.read().decode('utf-8'))['臺羅']

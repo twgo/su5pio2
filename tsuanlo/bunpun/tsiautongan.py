@@ -8,10 +8,10 @@ from os import makedirs
 
 
 def tsuliau():
+    makedirs('tsiau')
     for laiguan in (
         訓練過渡格式.objects.values_list('來源', flat=True).distinct()
     ):
-        makedirs('tsiau')
         with open(join('tsiau', laiguan), 'w') as tong:
             for tsua in (
                 訓練過渡格式.objects

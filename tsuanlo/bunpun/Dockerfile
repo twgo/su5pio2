@@ -31,5 +31,7 @@ RUN echo import lautsuanlo | python3 manage.py shell
 RUN pip3 install --upgrade https://github.com/i3thuan5/tai5-uan5_gian5-gi2_kang1-ku7/archive/Siu_lo-ma-ji_kuihuan.zip
 COPY thongke.py .
 RUN echo import thongke | python3 manage.py shell
+COPY tsiautongan.py .
+RUN echo import tsiautongan | python3 manage.py shell
 
 CMD cat tsonghong.json

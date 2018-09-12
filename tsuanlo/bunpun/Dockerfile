@@ -24,6 +24,7 @@ RUN python3 manage.py 教育部臺灣閩南語字詞頻調查工作
 RUN python3 manage.py 白話字文獻館 --錯誤印部份就好
 # RUN python3 manage.py 台灣植物名彙
 RUN python3 manage.py 台灣白話基礎語句
+COPY twisas-HL-kaldi.json .
 RUN python3 manage.py 匯入台文語料庫trs文本 train --trs聽拍json twisas-HL-kaldi.json
             
 COPY lautsuanlo.py .

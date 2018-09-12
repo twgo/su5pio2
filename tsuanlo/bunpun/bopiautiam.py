@@ -18,7 +18,7 @@ def tsuliau():
                 for tsua in (
                     tong.readlines()
                 ):
-                    句物件 = 拆文分析器.分詞句物件(tsua.rstrip())
+                    句物件 = 拆文分析器.建立句物件(tsua.rstrip())
                     lau = []
                     for 詞物件 in 句物件.網出詞物件():
                         tioh = True

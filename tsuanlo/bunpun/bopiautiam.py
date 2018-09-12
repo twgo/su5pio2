@@ -23,7 +23,7 @@ def tsuliau():
                     for 詞物件 in 句物件.網出詞物件():
                         tioh = True
                         for 字物件 in 詞物件.篩出字物件():
-                            if 臺灣閩南語羅馬字拼音(字物件.型) is None:
+                            if 臺灣閩南語羅馬字拼音(字物件.型).音標 is None:
                                 tioh = False
                         if tioh:
                             lau.append(詞物件.看分詞())

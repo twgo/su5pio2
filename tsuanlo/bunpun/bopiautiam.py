@@ -27,7 +27,7 @@ def tsuliau():
                                 tioh = False
                         if tioh:
                             lau.append(詞物件.看分詞())
-                    print(lau, file=bopiau)
+                    print(' '.join(lau), file=bopiau)
 
 
 tsuliau()

@@ -1,0 +1,89 @@
+tsit8-tshing1	ts- it tsʰ- iŋ
+it4-gueh8	ʔ- it g- ueʔ
+tsit8-pah4	ts- it p- aʔ
+tsit8-ban7	ts- it b- an
+tshit4-tsap8	tsʰ- it ts- ap
+tshit4-tshing1	tsʰ- it tsʰ- iŋ
+tshit4-gueh8	tsʰ- it g- ueʔ
+tshit4-pah4	tsʰ- it p- aʔ
+tshit4-ban7	tsʰ- it b- an
+tshit4-tiam2-puann3	tsʰ- it t- iam p- uⁿaⁿ
+tshit4-tiam2-gua7	tsʰ- it t- iam g- ua
+sann1-tsap8	s- aⁿ ts- ap
+sann1-tshing1	s- aⁿ tsʰ- iŋ
+sann1-gueh8	s- aⁿ g- ueʔ
+sann1-pah4	s- aⁿ p- aʔ
+sann1-ban7	s- aⁿ b- an
+sann1-tiam2-puann3	s- aⁿ t- iam p- uⁿaⁿ
+sann1-tiam2-gua7	s- aⁿ t- iam g- ua
+kau2-tsap8	k- au ts- ap
+kau2-tshing1	k- au tsʰ- iŋ
+kau2-gueh8	k- au g- ueʔ
+kau2-pah4	k- au p- aʔ
+kau2-ban7	k- au b- an
+kau2-tiam2-puann3	k- au t- iam p- uⁿaⁿ
+kau2-tiam2-gua7	k- au t- iam g- ua
+ji7-tsap8	dz- i ts- ap
+ji7-gueh8	dz- i g- ueʔ
+goo7-tsap8	g- o ts- ap
+goo7-tshing1	g- o tsʰ- iŋ
+goo7-gueh8	g- o g- ueʔ
+goo7-pah4	g- o p- aʔ
+goo7-ban7	g- o b- an
+goo7-tiam2-puann3	g- o t- iam p- uⁿaⁿ
+goo7-tiam2-gua7	g- o t- iam g- ua
+nng7-tshing1	n- ŋ̩ tsʰ- iŋ
+nng7-pah4	n- ŋ̩ p- aʔ
+nng7-ban7	n- ŋ̩ b- an
+nng7-tiam2-puann3	n- ŋ̩ t- iam p- uⁿaⁿ
+nng7-tiam2-gua7	n- ŋ̩ t- iam g- ua
+peh4-tsap8	p- eʔ ts- ap
+peh4-tshing1	p- eʔ tsʰ- iŋ
+pueh4-gueh8	p- ueʔ g- ueʔ
+peh4-pah4	p- eʔ p- aʔ
+peh4-ban7	p- eʔ b- an
+peh4-tiam2-puann3	p- eʔ t- iam p- uⁿaⁿ
+peh4-tiam2-gua7	p- eʔ t- iam g- ua
+lak8-tsap8	l- ak ts- ap
+lak8-tshing1	l- ak tsʰ- iŋ
+lak8-gueh8	l- ak g- ueʔ
+lak8-pah4	l- ak p- aʔ
+lak8-ban7	l- ak b- an
+lak8-tiam2-puann3	l- ak t- iam p- uⁿaⁿ
+lak8-tiam2-gua7	l- ak t- iam g- ua
+tshe1-it4	tsʰ- e ʔ- it
+tshue1-tshit4	tsʰ- ue tsʰ- it
+tshue1-sann1	tsʰ- ue s- aⁿ
+tshe1-kau2	tsʰ- e k- au
+tshe1-ji7	tsʰ- e dz- i
+tshue1-goo7	tsʰ- ue g- o
+tshue1-peh4	tsʰ- ue p- eʔ
+tshe1-lak8	tsʰ- e l- ak
+tshe1-tsap8	tsʰ- e ts- ap
+tshoo1-si3	tsʰ- o s- i
+tsap8-it4-gueh8	ts- ap ʔ- it g- ueʔ
+tsap8-it4-tiam2-puann3	ts- ap ʔ- it t- iam p- uⁿaⁿ
+tsap8-it4-tiam2-gua7	ts- ap ʔ- it t- iam g- ua
+tsap8-li7-gueh8	ts- ap l- i g- ueʔ
+tsap8-ji7-tiam2-puann3	ts- ap dz- i t- iam p- uⁿaⁿ
+tsap8-ji7-tiam2-gua7	ts- ap dz- i t- iam g- ua
+tsap8-gueh8	ts- ap g- ueʔ
+tsap8-ban7	ts- ap b- an
+tsap8-tiam2-puann3	ts- ap t- iam p- uⁿaⁿ
+tsap8-tiam2-gua7	ts- ap t- iam g- ua
+si3-tsap8	s- i ts- ap
+si3-tshing1	s- i tsʰ- iŋ
+si3-gueh8	s- i g- ueʔ
+si3-pah4	s- i p- aʔ
+si3-ban7	s- i b- an
+si3-tiam2-puann3	s- i t- iam p- uⁿaⁿ
+si3-tiam2-gua7	s- i t- iam g- ua
+pai3-it4	p- ai ʔ- it
+pai3-sann1	p- ai s- aⁿ
+pai3-ji7	p- ai dz- i
+pai3-goo7	p- ai g- o
+pai3-lak8	p- ai l- ak
+pai3-si3	p- ai s- i
+le2-pai3	l- e p- ai
+tiam2-puann3	t- iam p- uⁿaⁿ
+tiam2-gua7	t- iam g- ua

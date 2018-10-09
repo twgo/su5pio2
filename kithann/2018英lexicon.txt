@@ -1,0 +1,37 @@
+A	ʔ- e
+B	b- i
+C	s- i
+CD	s- i t- i
+D	t- i
+E	ʔ- i
+F	ʔ- e h- u
+Fb	ʔ- e h- u b- i
+G	ts- i
+Google	k- u k- oo
+H	ʔ- e tsʰ- i
+I	ʔ- ai
+IPhone	ʔ- ai h- ong
+J	ts- e
+K	kʰ- e
+L	ʔ- e l- oo
+Line	l- ai
+M	ʔ- e m- u
+N	ʔ- ian
+O	ʔ- oo
+P	ph- i
+PC	ph- i s- i
+Q	kʰ- iu
+R	ʔ- a
+S	ʔ- e s- u
+Seven-Eleven	s- e b- o
+T	tʰ- i
+3C	s an s i
+U	ʔ- iu
+V	b- ui
+W	t- a p- u l- iu
+Wifi	ʔ- uai h- uai
+X ʔ- e k- o s- u
+Y	ʔ- uai
+Z	l- i
+Z	j- i
+
